@@ -1,5 +1,5 @@
-cd
-mkdir
-ls -la
-..
-git clone
+cd - change directory
+mkdir - create folder
+ls -la - view folder content
+.. - go back
+git clone -  clone git repozitory 
