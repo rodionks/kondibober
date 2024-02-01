@@ -65,10 +65,20 @@ function findArrMax(arr) {
                 max = arr[i + 1]
             }
         }
-        console.log("максимум массива = " + max)
+        return max
     }
 }
 
-
 let arr = [222, 222, 547, 488, -2, 547, 488, -1]
-findArrMax(arr)
+let s=findArrMax(arr)
+console.log("максимум массива = " + s)
+
+function check(s,guess){
+    if (s===guess){
+        console.log("OK")
+    } else{
+        console.log("fail")
+    }
+}
+
+check(findArrMax(arr),547)
