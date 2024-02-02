@@ -57,7 +57,8 @@ function findArr2Max(arr) {
 function findArrMax(arr) {
     let arrl = arr.length
     if (arrl === 0) {
-        console.log("в массиве 0 элементов")
+        // console.log("в массиве 0 элементов")
+        return undefined
     } else {
         let max = arr[0]
         for (let i = 0; i < arrl; i = i + 1) {
@@ -82,3 +83,10 @@ function check(s,guess){
 }
 
 check(findArrMax(arr),547)
+check(findArrMax([1]), 1)
+check(findArrMax([1,2]), 2)
+check(findArrMax([Number.MIN_VALUE, Number.MAX_VALUE]), Number.MAX_VALUE)
+check(findArrMax([-1,-2]), -1)
+check(findArrMax([100,2,3,4,5]), 100)
+check(findArrMax([]), undefined)
+
